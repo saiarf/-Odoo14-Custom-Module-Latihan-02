@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- tree view -->
+    <record id="buku_komik_view_tree" model="ir.ui.view">
+        <field name="name">Buku Komik</field>
+        <field name="model">buku.bukukomik</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="deskripsi"/>
+                <field name="harga"/>                
+            </tree>
+        </field>
+    </record>
+
+    <!-- form view -->
+    <record id="buku_komik_view_form" model="ir.ui.view">
+        <field name="name">Form Buku Komik</field>
+        <field name="model">buku.bukukomik</field>
+        <field name="arch" type="xml">
+            <form string="Buku komik">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="stok"/>
+                        <field name="harga"/>
+                    </group>
+               
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="deskripsi"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- action window -->
+    <record id="buku_komik_action" model="ir.actions.act_window">
+        <field name="name">Buku Komik</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">buku.bukukomik</field>
+        <field name="view_mode">tree,form</field>        
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="buku_komik_menu_act" 
+        name="Buku Komik" 
+        parent="buku_akomodasi_menu_categ" 
+        action="buku_komik_action" 
+        sequence="40"/>
+
+</odoo>

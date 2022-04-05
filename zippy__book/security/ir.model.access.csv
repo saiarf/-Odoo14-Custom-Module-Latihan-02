@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+
+access_buku_jenisbuku,access.buku.jenisbuku,model_buku_jenisbuku,,1,1,1,1
+access_buku_bukunovel,access.buku.bukunovel,model_buku_bukunovel,,1,1,1,1
+access_buku_bukukomik,access.buku.bukukomik,model_buku_bukukomik,,1,1,1,1
+access_buku_daftarbuku,access.buku.daftarbuku,model_buku_daftarbuku,,1,1,1,1
+
+access_buku_order,access.buku.order,model_buku_order,,1,1,1,1
+access_buku_orderbukudetail,access.buku.orderbukudetail,model_buku_orderbukudetail,,1,1,1,1
+access_buku_ordernoveldetail,access.buku.ordernoveldetail,model_buku_ordernoveldetail,,1,1,1,1
+
+access_buku_penerimaan,access.buku.penerimaan,model_buku_penerimaan,,1,1,1,1
+access_buku_akunting,access.buku.akunting,model_buku_akunting,,1,1,1,1
